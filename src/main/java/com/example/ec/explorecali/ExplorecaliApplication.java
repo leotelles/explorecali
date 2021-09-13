@@ -44,7 +44,7 @@ public class ExplorecaliApplication implements CommandLineRunner {
 	private void createTourPackages() {
 		tourPackageService.createTourPackage("BC", "Backpack Cal");
 		tourPackageService.createTourPackage("CC", "California Calm");
-		tourPackageService.createTourPackage("CH", "California Hot Springs");
+		tourPackageService.createTourPackage("CH", "California Hot springs");
 		tourPackageService.createTourPackage("CY", "Cycle California");
 		tourPackageService.createTourPackage("DS", "From Desert to Sea");
 		tourPackageService.createTourPackage("KC", "Kids California");
