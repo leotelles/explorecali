@@ -46,9 +46,8 @@ public class Tour {
 	@Enumerated
 	private Region region;
 
-	public Tour(Integer id, String title, String description, String blurb, Integer price, String duration,
+	public Tour(String title, String description, String blurb, Integer price, String duration,
 			String bullets, String keywords, TourPackage tourPackage, Difficulty difficulty, Region region) {
-		this.id = id;
 		this.title = title;
 		this.description = description;
 		this.blurb = blurb;
@@ -67,10 +66,6 @@ public class Tour {
 
 	public Integer getId() {
 		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
 	}
 
 	public String getTitle() {
