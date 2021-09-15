@@ -9,11 +9,13 @@ import java.util.Objects;
 /**
  * A Classification of Tours.
  *
- * Created by Mary Ellen Bowman
  */
 @Entity
 public class TourPackage implements Serializable {
-    @Id
+
+	private static final long serialVersionUID = 1L;
+
+	@Id
     private String code;
 
     @Column

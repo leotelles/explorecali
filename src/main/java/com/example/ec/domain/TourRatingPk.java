@@ -8,11 +8,13 @@ import java.io.Serializable;
 /**
  * Tour Rating Primary Key containing a Tour and a Customer Identifier
 
- * Created by Mary Ellen Bowman
  */
 @Embeddable
 public class TourRatingPk implements Serializable {
-    @ManyToOne
+
+	private static final long serialVersionUID = 1L;
+
+	@ManyToOne
     private Tour tour;
 
     @Column(insertable = false, updatable = false,nullable = false)
