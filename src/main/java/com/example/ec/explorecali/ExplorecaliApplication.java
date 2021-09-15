@@ -35,10 +35,10 @@ public class ExplorecaliApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		createTourPackages();
-		long numOfPackages = tourPackageService.total();
+//		long numOfPackages = tourPackageService.total();
 		
 		createTours("ExploreCalifornia.json");
-		long numOfTours = tourService.total();		
+//		long numOfTours = tourService.total();		
 	}
 	
 	private void createTourPackages() {
@@ -77,7 +77,7 @@ public class ExplorecaliApplication implements CommandLineRunner {
             return new ObjectMapper().setVisibility(FIELD, ANY).
                     readValue(new FileInputStream(fileToImport), new TypeReference<List<TourFromFile>>() {});
         }
-        protected TourFromFile(){}
+//        protected TourFromFile(){}
 
         String getPackageType() { return packageType; }
 
