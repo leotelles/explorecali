@@ -7,13 +7,11 @@ import java.util.Objects;
 /**
  * The Tour contains all attributes of an Explore California Tour.
  *
+ * Created by Mary Ellen Bowman
  */
 @Entity
 public class Tour implements Serializable{
-
-	private static final long serialVersionUID = 1L;
-
-	@Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 

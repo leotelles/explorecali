@@ -6,6 +6,7 @@ import java.util.Objects;
 /**
  * Rating of a Tour by a Customer
  *
+ * Created by Mary Ellen Bowman
  */
 @Entity
 @Table(name="tour_rating")
@@ -74,6 +75,10 @@ public class TourRating {
             case 5:return "Great";
             default: return score.toString();
         }
+    }
+
+    public Integer getId() {
+        return id;
     }
 
     public Integer getScore() {

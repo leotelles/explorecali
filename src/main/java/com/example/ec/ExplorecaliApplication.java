@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Main Class for the Spring Boot Application
  *
+ * Created by Mary Ellen Bowman
  */
 @SpringBootApplication
 public class ExplorecaliApplication {
