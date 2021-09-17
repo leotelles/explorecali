@@ -1,9 +1,6 @@
 package com.example.ec.web;
 
 import com.example.ec.service.TourRatingService;
-
-import io.swagger.annotations.*;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +14,7 @@ import java.util.NoSuchElementException;
 /**
  * Created by Mary Ellen Bowman
  */
-@Api(description = "API to just pull ratings")
+//@Api(description = "API to just pull ratings")
 @RestController
 @RequestMapping(path = "/ratings")
 public class RatingController {
@@ -33,16 +30,16 @@ public class RatingController {
     }
 
     @GetMapping
-    @ApiOperation(value = "Find all ratings")
-    @ApiResponses(value = { @ApiResponse(code = 200, message = "OK") })
+//    @ApiOperation(value = "Find all ratings")
+//    @ApiResponses(value = { @ApiResponse(code = 200, message = "OK") })
     public List<RatingDto> getAll() {
         LOGGER.info("GET /ratings");
         return assembler.toResources(tourRatingService.lookupAll());
     }
 
     @GetMapping("/{id}")
-    @ApiOperation(value = "Find ratings by id")
-    @ApiResponses(value = { @ApiResponse(code = 200, message = "OK"), @ApiResponse(code = 404, message = "Rating not found") })
+//    @ApiOperation(value = "Find ratings by id")
+//    @ApiResponses(value = { @ApiResponse(code = 200, message = "OK"), @ApiResponse(code = 404, message = "Rating not found") })
     public RatingDto getRating(//@ApiParam(value = "rating identifier")
                                    @PathVariable("id") Integer id) {
         LOGGER.info("GET /ratings/{id}", id);
